@@ -44,3 +44,15 @@ main {
 .die-num {
   font-size: 2rem;
 }
+
+button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+}
