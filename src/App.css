@@ -38,7 +38,10 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
+}
+
+.die-face  .isHeld {
+  background-color: #59E391;
 }
 
 .die-num {

@@ -5,20 +5,26 @@ import { nanoid } from 'nanoid';
 
 
 function App() {
+
+function allDice() {
+  
+}
+
   const [newDice, setNewDice] = useState(allNewDice())
+
   function allNewDice() {
     const newDice = []
     for (let i = 0; i < 10; i++) {
       newDice.push({
         value: Math.floor(Math.random() * 6) + 1,
-        isHeld: false,
+        isHeld: true,
         id: nanoid(),
       })
    }
     return newDice
   }
 const diceElements = newDice.map((die) =>  (
-  <Die key={die.id} value={die.value}/>
+  <Die key={die.id} value={die.value} isHeld={die.isHeld} />
   ))
 
 function rollAllDice() {
