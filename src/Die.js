@@ -5,7 +5,10 @@ function Die(props) {
     }
 
     return (
-        <div className="die-face" style = {style}>
+        <div className="die-face"
+            style = {style}
+            onClick = {props.holdDice}
+        >
         <h2 className="die-name">{props.value}</h2>
         </div>
     );
